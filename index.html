@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a professional model. Editorial and fashion photography.">
+    <meta property="og:title" content="Model Portfolio">
+    <meta property="og:description" content="Professional model portfolio featuring editorial and fashion photography.">
+    <meta property="og:type" content="website">
+    
+    <title>Model Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="#home" class="brand-name">YOUR NAME</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image-container">
+            <img 
+                src="images/hero.jpg" 
+                alt="Portfolio hero image" 
+                class="hero-image"
+                fetchpriority="high"
+            >
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">YOUR NAME</h1>
+                <p class="hero-title">MODEL</p>
+            </div>
+            <div class="hero-scroll">
+                <span class="scroll-indicator">SCROLL TO EXPLORE</span>
+                <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                    <path d="M12 5v14M19 13l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div id="portfolio-container" class="portfolio-container">
+            <!-- Projects will be generated here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-name">YOUR NAME</h2>
+                <p class="contact-title">MODEL</p>
+            </div>
+            
+            <div class="contact-location">
+                <p>Based in <span id="contact-city">YOUR CITY</span></p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <label>EMAIL</label>
+                    <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <label>INSTAGRAM</label>
+                    <a href="https://instagram.com/yourprofile" target="_blank" class="contact-link">@yourprofile</a>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <a href="mailto:your.email@example.com" class="cta-button">GET IN TOUCH</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+            <div class="lightbox-counter" id="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
