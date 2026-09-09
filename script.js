@@ -50,9 +50,22 @@ const projects = [
 ];
 
 /* ============================================
+   POLAROIDS DATA
+   ============================================ */
+const polaroids = [
+    'images/polaroid-01.jpg',
+    'images/polaroid-02.jpg',
+    'images/polaroid-03.jpg',
+    'images/polaroid-04.jpg',
+    'images/polaroid-05.jpg',
+    'images/polaroid-06.jpg'
+];
+
+/* ============================================
    DOM ELEMENTS
    ============================================ */
 const portfolioContainer = document.getElementById('portfolio-container');
+const polaroidsContainer = document.getElementById('polaroids-container');
 const projectViewer = document.getElementById('project-viewer');
 const projectViewerContent = document.getElementById('project-viewer-content');
 const projectViewerClose = document.getElementById('project-viewer-close');
@@ -69,6 +82,8 @@ const navbar = document.getElementById('navbar');
 
 let currentProject = null;
 let currentImageIndex = 0;
+let currentPolaroidIndex = 0;
+let isViewingPolaroid = false;
 
 /* ============================================
    PORTFOLIO RENDERING - GRID VIEW
@@ -105,13 +120,54 @@ function renderPortfolio() {
 }
 
 /* ============================================
+   POLAROIDS RENDERING
+   ============================================ */
+function renderPolaroids() {
+    polaroidsContainer.innerHTML = '';
+
+    polaroids.forEach((imageUrl, index) => {
+        const polaroidItem = document.createElement('div');
+        polaroidItem.className = 'polaroid-item';
+        
+        polaroidItem.innerHTML = `
+            <div class="polaroid-frame">
+                <div class="polaroid-image-wrapper">
+                    <img 
+                        src="${imageUrl}" 
+                        alt="Polaroid ${index + 1}" 
+                        class="polaroid-image"
+                        loading="lazy"
+                    >
+                </div>
+                <p class="polaroid-label">Polaroid ${index + 1}</p>
+            </div>
+        `;
+
+        polaroidItem.addEventListener('click', () => {
+            openPolaroid(index);
+        });
+
+        polaroidsContainer.appendChild(polaroidItem);
+    });
+}
+
+/* ============================================
    PROJECT VIEWER FUNCTIONS
    ============================================ */
 function openProject(projectIndex) {
     currentProject = projectIndex;
     currentImageIndex = 0;
+    isViewingPolaroid = false;
     projectViewer.classList.add('active');
     updateProjectViewer();
+    document.body.style.overflow = 'hidden';
+}
+
+function openPolaroid(polaroidIndex) {
+    currentPolaroidIndex = polaroidIndex;
+    isViewingPolaroid = true;
+    projectViewer.classList.add('active');
+    updatePolaroidViewer();
     document.body.style.overflow = 'hidden';
 }
 
@@ -119,6 +175,7 @@ function closeProject() {
     projectViewer.classList.remove('active');
     document.body.style.overflow = 'auto';
     currentProject = null;
+    isViewingPolaroid = false;
 }
 
 function updateProjectViewer() {
@@ -151,6 +208,32 @@ function updateProjectViewer() {
     }
 }
 
+function updatePolaroidViewer() {
+    const totalPolaroids = polaroids.length;
+    
+    // Update image
+    projectImage.src = polaroids[currentPolaroidIndex];
+    projectImage.alt = `Polaroid ${currentPolaroidIndex + 1}`;
+    
+    // Update info - hide project-specific info for polaroids
+    projectTitle.textContent = '';
+    projectDescription.textContent = '';
+    projectCredits.innerHTML = '';
+    projectInfo.style.display = 'none';
+    
+    // Update counter
+    projectCounter.textContent = `${currentPolaroidIndex + 1} / ${totalPolaroids}`;
+    
+    // Show navigation buttons
+    if (totalPolaroids <= 1) {
+        projectNavPrev.style.display = 'none';
+        projectNavNext.style.display = 'none';
+    } else {
+        projectNavPrev.style.display = 'flex';
+        projectNavNext.style.display = 'flex';
+    }
+}
+
 function updateCredits(credits) {
     projectCredits.innerHTML = '';
     
@@ -174,17 +257,27 @@ function updateCredits(credits) {
 }
 
 function nextProjectImage() {
-    if (currentProject === null) return;
-    const totalImages = projects[currentProject].images.length;
-    currentImageIndex = (currentImageIndex + 1) % totalImages;
-    updateProjectViewer();
+    if (isViewingPolaroid) {
+        currentPolaroidIndex = (currentPolaroidIndex + 1) % polaroids.length;
+        updatePolaroidViewer();
+    } else {
+        if (currentProject === null) return;
+        const totalImages = projects[currentProject].images.length;
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        updateProjectViewer();
+    }
 }
 
 function prevProjectImage() {
-    if (currentProject === null) return;
-    const totalImages = projects[currentProject].images.length;
-    currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-    updateProjectViewer();
+    if (isViewingPolaroid) {
+        currentPolaroidIndex = (currentPolaroidIndex - 1 + polaroids.length) % polaroids.length;
+        updatePolaroidViewer();
+    } else {
+        if (currentProject === null) return;
+        const totalImages = projects[currentProject].images.length;
+        currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+        updateProjectViewer();
+    }
 }
 
 /* ============================================
@@ -302,14 +395,28 @@ function observePortfolioItems() {
     });
 }
 
+function observePolaroidItems() {
+    const polaroidItems = document.querySelectorAll('.polaroid-item');
+    polaroidItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(item);
+    });
+}
+
 /* ============================================
    INITIALIZATION
    ============================================ */
 function init() {
     renderPortfolio();
+    renderPolaroids();
     updateNavbar();
     
-    setTimeout(observePortfolioItems, 100);
+    setTimeout(() => {
+        observePortfolioItems();
+        observePolaroidItems();
+    }, 100);
 }
 
 if (document.readyState === 'loading') {
