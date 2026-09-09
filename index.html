@@ -60,6 +60,50 @@
         </div>
     </section>
 
+    <!-- Project Viewer Modal -->
+    <div id="project-viewer" class="project-viewer">
+        <div class="project-viewer-content" id="project-viewer-content">
+            <!-- Main Image Container -->
+            <div class="project-image-container" id="project-image-container">
+                <img id="project-image" src="" alt="" class="project-image">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="project-nav-button project-nav-prev" id="project-nav-prev" aria-label="Previous image">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button class="project-nav-button project-nav-next" id="project-nav-next" aria-label="Next image">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <!-- Close Button -->
+            <button class="project-viewer-close" id="project-viewer-close" aria-label="Close project">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <!-- Project Info Sidebar -->
+            <div class="project-info" id="project-info">
+                <div class="project-info-scroll">
+                    <h2 class="project-info-title" id="project-title"></h2>
+                    <p class="project-info-description" id="project-description"></p>
+                    
+                    <div class="project-credits" id="project-credits">
+                        <!-- Credits will be inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Counter -->
+            <div class="project-counter" id="project-counter">1 / 1</div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contact-container">
@@ -88,27 +132,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-container">
-            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
-            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            <img id="lightbox-image" src="" alt="">
-            <button class="lightbox-next" id="lightbox-next" aria-label="Next image">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-            <div class="lightbox-counter" id="lightbox-counter">
-                <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
