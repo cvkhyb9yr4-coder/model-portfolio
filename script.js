@@ -4,12 +4,14 @@
 const projects = [
     {
         id: 1,
-        name: 'Editorial Series',
+        name: 'Project 1',
         description: 'A collection of editorial portraits exploring light and shadow in contemporary fashion photography.',
         images: [
-            'images/portfolio-1.jpg',
-            'images/portfolio-2.jpg',
-            'images/portfolio-3.jpg'
+            'images/proyecto-1/01.png',
+            'images/proyecto-1/02.png',
+            'images/proyecto-1/03.png',
+            'images/proyecto-1/04.png',
+            'images/proyecto-1/05.png'
         ],
         credits: {
             photographer: 'John Doe',
@@ -22,11 +24,14 @@ const projects = [
     },
     {
         id: 2,
-        name: 'Fashion Campaign',
+        name: 'Project 2',
         description: 'A sophisticated campaign featuring bold minimalist styling and natural lighting.',
         images: [
-            'images/portfolio-4.jpg',
-            'images/portfolio-5.jpg'
+            'images/proyecto-2/01.png',
+            'images/proyecto-2/02.png',
+            'images/proyecto-2/03.png',
+            'images/proyecto-2/04.png',
+            'images/proyecto-2/05.png'
         ],
         credits: {
             photographer: 'John Doe',
@@ -36,10 +41,173 @@ const projects = [
     },
     {
         id: 3,
-        name: 'Studio Portraits',
+        name: 'Project 3',
         description: 'Intimate studio portraits showcasing personality and presence.',
         images: [
-            'images/portfolio-6.jpg'
+            'images/proyecto-3/01.png',
+            'images/proyecto-3/02.png',
+            'images/proyecto-3/03.png',
+            'images/proyecto-3/04.png',
+            'images/proyecto-3/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            makeup: 'Artist Name',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 4,
+        name: 'Project 4',
+        description: 'Urban fashion series with dynamic poses and contemporary styling.',
+        images: [
+            'images/proyecto-4/01.png',
+            'images/proyecto-4/02.png',
+            'images/proyecto-4/03.png',
+            'images/proyecto-4/04.png',
+            'images/proyecto-4/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 5,
+        name: 'Project 5',
+        description: 'High-fashion editorial with dramatic lighting and bold composition.',
+        images: [
+            'images/proyecto-5/01.png',
+            'images/proyecto-5/02.png',
+            'images/proyecto-5/03.png',
+            'images/proyecto-5/04.png',
+            'images/proyecto-5/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            makeup: 'Artist Name',
+            hair: 'Hair Stylist Name',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 6,
+        name: 'Project 6',
+        description: 'Commercial campaign with professional styling and polished aesthetic.',
+        images: [
+            'images/proyecto-6/01.png',
+            'images/proyecto-6/02.png',
+            'images/proyecto-6/03.png',
+            'images/proyecto-6/04.png',
+            'images/proyecto-6/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 7,
+        name: 'Project 7',
+        description: 'Natural light photography series with authentic and relaxed poses.',
+        images: [
+            'images/proyecto-7/01.png',
+            'images/proyecto-7/02.png',
+            'images/proyecto-7/03.png',
+            'images/proyecto-7/04.png',
+            'images/proyecto-7/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            makeup: 'Artist Name',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 8,
+        name: 'Project 8',
+        description: 'Fashion lookbook featuring seasonal collections and trend styling.',
+        images: [
+            'images/proyecto-8/01.png',
+            'images/proyecto-8/02.png',
+            'images/proyecto-8/03.png',
+            'images/proyecto-8/04.png',
+            'images/proyecto-8/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            creative_direction: 'Creative Director',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 9,
+        name: 'Project 9',
+        description: 'Conceptual editorial with artistic direction and experimental styling.',
+        images: [
+            'images/proyecto-9/01.png',
+            'images/proyecto-9/02.png',
+            'images/proyecto-9/03.png',
+            'images/proyecto-9/04.png',
+            'images/proyecto-9/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            makeup: 'Artist Name',
+            creative_direction: 'Creative Director',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 10,
+        name: 'Project 10',
+        description: 'Beauty and portrait focused series with elegant minimalist backgrounds.',
+        images: [
+            'images/proyecto-10/01.png',
+            'images/proyecto-10/02.png',
+            'images/proyecto-10/03.png',
+            'images/proyecto-10/04.png',
+            'images/proyecto-10/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            makeup: 'Artist Name',
+            hair: 'Hair Stylist Name',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 11,
+        name: 'Project 11',
+        description: 'Lifestyle photography series with natural settings and authentic moments.',
+        images: [
+            'images/proyecto-11/01.png',
+            'images/proyecto-11/02.png',
+            'images/proyecto-11/03.png',
+            'images/proyecto-11/04.png',
+            'images/proyecto-11/05.png'
+        ],
+        credits: {
+            photographer: 'John Doe',
+            stylist: 'Jane Smith',
+            model: 'Model Name'
+        }
+    },
+    {
+        id: 12,
+        name: 'Project 12',
+        description: 'Professional headshots and personal branding photography series.',
+        images: [
+            'images/proyecto-12/01.png',
+            'images/proyecto-12/02.png',
+            'images/proyecto-12/03.png',
+            'images/proyecto-12/04.png',
+            'images/proyecto-12/05.png'
         ],
         credits: {
             photographer: 'John Doe',
