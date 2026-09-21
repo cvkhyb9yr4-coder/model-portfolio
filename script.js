@@ -5,7 +5,7 @@ const projects = [
     {
         id: 1,
         name: "Rocio Meyer's Personal Project",
-        cover: 'images/project1/005781-015-VK.JPG',
+        cover: 'images/project1/005781-018-VK.JPG',
         images: [
             'images/project1/005781-005-VK.JPG',
             'images/project1/005781-007-VK.JPG',
