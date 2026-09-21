@@ -33,7 +33,10 @@ jobs:
         run: |
           mkdir -p _site
           shopt -s nullglob
-          cp *.html *.css *.js _site/
+          root_files=( *.html *.css *.js )
+          if [ "${#root_files[@]}" -gt 0 ]; then
+            cp "${root_files[@]}" _site/
+          fi
           for file in CNAME robots.txt sitemap.xml favicon.ico favicon.png favicon.svg manifest.webmanifest; do
             if [ -e "$file" ]; then
               cp "$file" _site/
