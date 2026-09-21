@@ -5,12 +5,13 @@ const projects = [
     {
         id: 1,
         name: "Rocio Meyer's Personal Project",
+        cover: 'images/project1/005781-015-VK.JPG',
         images: [
-            'images/project1/01.png',
-            'images/project1/02.png',
-            'images/project1/03.png',
-            'images/project1/04.png',
-            'images/project1/05.png'
+            'images/project1/005781-005-VK.JPG',
+            'images/project1/005781-007-VK.JPG',
+            'images/project1/005781-015-VK.JPG',
+            'images/project1/005781-026-VK.JPG',
+            'images/project1/005781-033-VK.JPG'
         ],
         credits: {
             photographer: 'Rocio Meyer',
@@ -21,12 +22,11 @@ const projects = [
     {
         id: 2,
         name: 'Final Design Project',
+        cover: 'images/project2/IMG_0781.JPG',
         images: [
-            'images/project2/01.png',
-            'images/project2/02.png',
-            'images/project2/03.png',
-            'images/project2/04.png',
-            'images/project2/05.png'
+            'images/project2/IMG_0779.JPG',
+            'images/project2/IMG_0781.JPG',
+            'images/project2/IMG_0784.JPG'
         ],
         credits: {
             photographer: 'Martina Moreno @martinamorenoooo',
@@ -38,12 +38,12 @@ const projects = [
     {
         id: 3,
         name: 'Personal Project',
+        cover: 'images/project3/cover3.JPG',
         images: [
-            'images/project3/01.png',
-            'images/project3/02.png',
-            'images/project3/03.png',
-            'images/project3/04.png',
-            'images/project3/05.png'
+            'images/project3/IMG_1053.JPG',
+            'images/project3/IMG_1054.JPG',
+            'images/project3/IMG_1055.JPG',
+            'images/project3/cover3.JPG'
         ],
         credits: {
             photographer: 'Jack @jacky_varlet',
@@ -56,13 +56,8 @@ const projects = [
     {
         id: 4,
         name: 'Personal Project',
-        images: [
-            'images/project4/01.png',
-            'images/project4/02.png',
-            'images/project4/03.png',
-            'images/project4/04.png',
-            'images/project4/05.png'
-        ],
+        cover: null,
+        images: [],
         credits: {
             photographer: 'Jack @jacky_varlet',
             stylist: '@almightymey_',
@@ -74,12 +69,13 @@ const projects = [
     {
         id: 5,
         name: 'Lost in Limbo',
+        cover: 'images/project5/cover5.JPG',
         images: [
-            'images/project5/01.png',
-            'images/project5/02.png',
-            'images/project5/03.png',
-            'images/project5/04.png',
-            'images/project5/05.png'
+            'images/project5/IMG_1061.JPG',
+            'images/project5/IMG_1065.JPG',
+            'images/project5/IMG_1066.JPG',
+            'images/project5/IMG_1070.JPG',
+            'images/project5/cover5.JPG'
         ],
         credits: {
             photography_post_production: 'Carla @klar_kei',
@@ -91,12 +87,11 @@ const projects = [
     {
         id: 6,
         name: 'Wabi-Sabi',
+        cover: 'images/project6/IMG_4254.JPG',
         images: [
-            'images/project6/01.png',
-            'images/project6/02.png',
-            'images/project6/03.png',
-            'images/project6/04.png',
-            'images/project6/05.png'
+            'images/project6/IMG_4252.JPG',
+            'images/project6/IMG_4253.JPG',
+            'images/project6/IMG_4254.JPG'
         ],
         credits: {
             photographer: 'Odeline @fotodeline'
@@ -105,12 +100,13 @@ const projects = [
     {
         id: 7,
         name: 'Tou com el ciment',
+        cover: 'images/project7/cover7',
         images: [
-            'images/project7/01.png',
-            'images/project7/02.png',
-            'images/project7/03.png',
-            'images/project7/04.png',
-            'images/project7/05.png'
+            'images/project7/125295d1-fa15-46e9-8a35-6a08bd3deeca.JPG',
+            'images/project7/8191a390-afba-4766-a71d-a2c894c82af8.JPG',
+            'images/project7/945519bc-440d-43dc-b39e-c14cc18c61aa.JPG',
+            'images/project7/defcfc8f-97e8-4af3-b1aa-48e31798b998.JPG',
+            'images/project7/cover7'
         ],
         credits: {
             photographer: 'Berta @berta.montblanch'
@@ -119,13 +115,8 @@ const projects = [
     {
         id: 8,
         name: 'Your Body, My Religion',
-        images: [
-            'images/project8/01.png',
-            'images/project8/02.png',
-            'images/project8/03.png',
-            'images/project8/04.png',
-            'images/project8/05.png'
-        ],
+        cover: null,
+        images: [],
         credits: {
             photographer: 'Paulo Herrera @pauloherrera.foto',
             stylist: 'Elena Alvira @elenaaalvira; Natalia Arroyas @nataliaarroyas; Casilda Ortiz @cassortiz; Sarah Leiva @sarahleiva_',
@@ -134,9 +125,6 @@ const projects = [
     }
 ];
 
-/* ============================================
-   POLAROIDS DATA
-   ============================================ */
 const polaroids = [
     'images/polaroid-01.jpg',
     'images/polaroid-02.jpg',
@@ -146,13 +134,9 @@ const polaroids = [
     'images/polaroid-06.jpg'
 ];
 
-/* ============================================
-   DOM ELEMENTS
-   ============================================ */
 const portfolioContainer = document.getElementById('portfolio-container');
 const polaroidsContainer = document.getElementById('polaroids-container');
 const projectViewer = document.getElementById('project-viewer');
-const projectViewerContent = document.getElementById('project-viewer-content');
 const projectViewerClose = document.getElementById('project-viewer-close');
 const projectImageContainer = document.getElementById('project-image-container');
 const projectImage = document.getElementById('project-image');
@@ -170,24 +154,18 @@ let currentImageIndex = 0;
 let currentPolaroidIndex = 0;
 let isViewingPolaroid = false;
 
-/* ============================================
-   PORTFOLIO RENDERING - GRID VIEW
-   ============================================ */
 function renderPortfolio() {
     portfolioContainer.innerHTML = '';
 
     projects.forEach((project) => {
         const portfolioItem = document.createElement('div');
         portfolioItem.className = 'portfolio-item';
-        const coverImage = project.images[0];
+        const coverImage = project.cover;
 
         portfolioItem.innerHTML = `
-            <img
-                src="${coverImage}"
-                alt="${project.name}"
-                class="portfolio-image"
-                loading="lazy"
-            >
+            ${coverImage
+                ? `<img src="${coverImage}" alt="${project.name}" class="portfolio-image" loading="lazy">`
+                : '<div class="portfolio-image portfolio-image-placeholder" aria-label="Image coming soon"></div>'}
             <div class="portfolio-overlay">
                 <div class="portfolio-overlay-content">
                     <h3 class="portfolio-title">${project.name}</h3>
@@ -195,49 +173,30 @@ function renderPortfolio() {
             </div>
         `;
 
-        portfolioItem.addEventListener('click', () => {
-            openProject(project.id - 1);
-        });
-
+        portfolioItem.addEventListener('click', () => openProject(project.id - 1));
         portfolioContainer.appendChild(portfolioItem);
     });
 }
 
-/* ============================================
-   POLAROIDS RENDERING
-   ============================================ */
 function renderPolaroids() {
     polaroidsContainer.innerHTML = '';
 
     polaroids.forEach((imageUrl, index) => {
         const polaroidItem = document.createElement('div');
         polaroidItem.className = 'polaroid-item';
-
         polaroidItem.innerHTML = `
             <div class="polaroid-frame">
                 <div class="polaroid-image-wrapper">
-                    <img
-                        src="${imageUrl}"
-                        alt="Polaroid ${index + 1}"
-                        class="polaroid-image"
-                        loading="lazy"
-                    >
+                    <img src="${imageUrl}" alt="Polaroid ${index + 1}" class="polaroid-image" loading="lazy">
                 </div>
                 <p class="polaroid-label">Polaroid ${index + 1}</p>
             </div>
         `;
-
-        polaroidItem.addEventListener('click', () => {
-            openPolaroid(index);
-        });
-
+        polaroidItem.addEventListener('click', () => openPolaroid(index));
         polaroidsContainer.appendChild(polaroidItem);
     });
 }
 
-/* ============================================
-   PROJECT VIEWER FUNCTIONS
-   ============================================ */
 function openProject(projectIndex) {
     currentProject = projectIndex;
     currentImageIndex = 0;
@@ -268,26 +227,28 @@ function updateProjectViewer() {
 
     const project = projects[currentProject];
     const totalImages = project.images.length;
-
-    projectImage.src = project.images[currentImageIndex];
-    projectImage.alt = project.name;
     projectTitle.textContent = project.name;
     projectDescription.textContent = '';
     updateCredits(project.credits);
-    projectCounter.textContent = `${currentImageIndex + 1} / ${totalImages}`;
 
-    if (totalImages <= 1) {
+    if (totalImages === 0) {
+        projectImage.removeAttribute('src');
+        projectImage.alt = 'Images coming soon';
+        projectCounter.textContent = '—';
         projectNavPrev.style.display = 'none';
         projectNavNext.style.display = 'none';
-    } else {
-        projectNavPrev.style.display = 'flex';
-        projectNavNext.style.display = 'flex';
+        return;
     }
+
+    projectImage.src = project.images[currentImageIndex];
+    projectImage.alt = project.name;
+    projectCounter.textContent = `${currentImageIndex + 1} / ${totalImages}`;
+    projectNavPrev.style.display = 'flex';
+    projectNavNext.style.display = 'flex';
 }
 
 function updatePolaroidViewer() {
     const totalPolaroids = polaroids.length;
-
     projectImage.src = polaroids[currentPolaroidIndex];
     projectImage.alt = `Polaroid ${currentPolaroidIndex + 1}`;
     projectTitle.textContent = '';
@@ -295,19 +256,12 @@ function updatePolaroidViewer() {
     projectCredits.innerHTML = '';
     projectInfo.style.display = 'none';
     projectCounter.textContent = `${currentPolaroidIndex + 1} / ${totalPolaroids}`;
-
-    if (totalPolaroids <= 1) {
-        projectNavPrev.style.display = 'none';
-        projectNavNext.style.display = 'none';
-    } else {
-        projectNavPrev.style.display = 'flex';
-        projectNavNext.style.display = 'flex';
-    }
+    projectNavPrev.style.display = 'flex';
+    projectNavNext.style.display = 'flex';
 }
 
 function updateCredits(credits) {
     projectCredits.innerHTML = '';
-
     const creditsOrder = [
         { key: 'photographer', label: 'Photography' },
         { key: 'photography_post_production', label: 'Photography & Post-Production' },
@@ -332,119 +286,68 @@ function nextProjectImage() {
     if (isViewingPolaroid) {
         currentPolaroidIndex = (currentPolaroidIndex + 1) % polaroids.length;
         updatePolaroidViewer();
-    } else {
-        if (currentProject === null) return;
-        const totalImages = projects[currentProject].images.length;
-        currentImageIndex = (currentImageIndex + 1) % totalImages;
-        updateProjectViewer();
+        return;
     }
+    if (currentProject === null || projects[currentProject].images.length === 0) return;
+    currentImageIndex = (currentImageIndex + 1) % projects[currentProject].images.length;
+    updateProjectViewer();
 }
 
 function prevProjectImage() {
     if (isViewingPolaroid) {
         currentPolaroidIndex = (currentPolaroidIndex - 1 + polaroids.length) % polaroids.length;
         updatePolaroidViewer();
-    } else {
-        if (currentProject === null) return;
-        const totalImages = projects[currentProject].images.length;
-        currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-        updateProjectViewer();
+        return;
     }
+    if (currentProject === null || projects[currentProject].images.length === 0) return;
+    const totalImages = projects[currentProject].images.length;
+    currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+    updateProjectViewer();
 }
 
-/* ============================================
-   PROJECT VIEWER EVENT LISTENERS
-   ============================================ */
 projectViewerClose.addEventListener('click', closeProject);
 projectNavNext.addEventListener('click', nextProjectImage);
 projectNavPrev.addEventListener('click', prevProjectImage);
-
-projectViewer.addEventListener('click', (e) => {
-    if (e.target === projectViewer) {
-        closeProject();
-    }
+projectViewer.addEventListener('click', (event) => {
+    if (event.target === projectViewer) closeProject();
 });
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', (event) => {
     if (!projectViewer.classList.contains('active')) return;
-
-    if (e.key === 'ArrowRight') {
-        e.preventDefault();
+    if (event.key === 'ArrowRight') {
+        event.preventDefault();
         nextProjectImage();
-    } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
+    } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
         prevProjectImage();
-    } else if (e.key === 'Escape') {
+    } else if (event.key === 'Escape') {
         closeProject();
     }
 });
 
-/* ============================================
-   TOUCH NAVIGATION FOR MOBILE
-   ============================================ */
 let touchStartX = 0;
 let touchEndX = 0;
-
-projectImageContainer.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
+projectImageContainer.addEventListener('touchstart', (event) => {
+    touchStartX = event.changedTouches[0].screenX;
 });
-
-projectImageContainer.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-});
-
-function handleSwipe() {
-    const swipeThreshold = 50;
+projectImageContainer.addEventListener('touchend', (event) => {
+    touchEndX = event.changedTouches[0].screenX;
     const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) diff > 0 ? nextProjectImage() : prevProjectImage();
+});
 
-    if (Math.abs(diff) > swipeThreshold) {
-        if (diff > 0) {
-            nextProjectImage();
-        } else {
-            prevProjectImage();
-        }
-    }
-}
-
-/* ============================================
-   NAVBAR SCROLL EFFECT
-   ============================================ */
 function updateNavbar() {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
 }
-
 window.addEventListener('scroll', updateNavbar);
 
-/* ============================================
-   SMOOTH SCROLL FOR NAVIGATION LINKS
-   ============================================ */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-
-        if (target) {
-            const offsetTop = target.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
+        if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
     });
 });
-
-/* ============================================
-   INTERSECTION OBSERVER - FADE IN ANIMATIONS
-   ============================================ */
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -454,11 +357,10 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-function observePortfolioItems() {
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    portfolioItems.forEach(item => {
+function observeItems(selector) {
+    document.querySelectorAll(selector).forEach(item => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';
         item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -466,27 +368,13 @@ function observePortfolioItems() {
     });
 }
 
-function observePolaroidItems() {
-    const polaroidItems = document.querySelectorAll('.polaroid-item');
-    polaroidItems.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(item);
-    });
-}
-
-/* ============================================
-   INITIALIZATION
-   ============================================ */
 function init() {
     renderPortfolio();
     renderPolaroids();
     updateNavbar();
-
     setTimeout(() => {
-        observePortfolioItems();
-        observePolaroidItems();
+        observeItems('.portfolio-item');
+        observeItems('.polaroid-item');
     }, 100);
 }
 
