@@ -4,8 +4,7 @@
 const projects = [
     {
         id: 1,
-        name: 'Project 1',
-        description: 'A collection of editorial portraits exploring light and shadow in contemporary fashion photography.',
+        name: "Rocio Meyer's Personal Project",
         images: [
             'images/proyecto-1/01.png',
             'images/proyecto-1/02.png',
@@ -14,18 +13,14 @@ const projects = [
             'images/proyecto-1/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            makeup: 'Artist Name',
-            hair: 'Hair Stylist Name',
-            creative_direction: 'Creative Director',
-            model: 'Model Name'
+            photographer: 'Rocio Meyer',
+            stylist: 'Rocio Meyer',
+            makeup: 'Jul Michèle Buch Vera'
         }
     },
     {
         id: 2,
-        name: 'Project 2',
-        description: 'A sophisticated campaign featuring bold minimalist styling and natural lighting.',
+        name: 'Final Design Project',
         images: [
             'images/proyecto-2/01.png',
             'images/proyecto-2/02.png',
@@ -34,15 +29,15 @@ const projects = [
             'images/proyecto-2/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            model: 'Model Name'
+            photographer: 'Martina Moreno @martinamorenoooo',
+            makeup: '@cmakkeup @muaxcelia',
+            hair: '@cmakkeup @muaxcelia',
+            creative_direction: 'Ana Izquierdo @annaizzzzz'
         }
     },
     {
         id: 3,
-        name: 'Project 3',
-        description: 'Intimate studio portraits showcasing personality and presence.',
+        name: 'Personal Project',
         images: [
             'images/proyecto-3/01.png',
             'images/proyecto-3/02.png',
@@ -51,15 +46,16 @@ const projects = [
             'images/proyecto-3/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            makeup: 'Artist Name',
-            model: 'Model Name'
+            photographer: 'Jack @jacky_varlet',
+            stylist: '@almightymey_',
+            makeup: 'Flor @florenciaricci_art',
+            hair: 'Flor @florenciaricci_art',
+            creative_direction: 'Jack'
         }
     },
     {
         id: 4,
-        name: 'Project 4',
-        description: 'Urban fashion series with dynamic poses and contemporary styling.',
+        name: 'Personal Project',
         images: [
             'images/proyecto-4/01.png',
             'images/proyecto-4/02.png',
@@ -68,15 +64,16 @@ const projects = [
             'images/proyecto-4/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            model: 'Model Name'
+            photographer: 'Jack @jacky_varlet',
+            stylist: '@almightymey_',
+            makeup: 'Flor @florenciaricci_art',
+            hair: 'Flor @florenciaricci_art',
+            creative_direction: 'Jack'
         }
     },
     {
         id: 5,
-        name: 'Project 5',
-        description: 'High-fashion editorial with dramatic lighting and bold composition.',
+        name: 'Lost in Limbo',
         images: [
             'images/proyecto-5/01.png',
             'images/proyecto-5/02.png',
@@ -85,17 +82,15 @@ const projects = [
             'images/proyecto-5/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            makeup: 'Artist Name',
-            hair: 'Hair Stylist Name',
-            model: 'Model Name'
+            photography_post_production: 'Carla @klar_kei',
+            stylist: 'Jul Michèle Buch Vera',
+            makeup: 'Jennifer Ramos @jennifert.ramos',
+            hair: 'Jennifer Ramos @jennifert.ramos'
         }
     },
     {
         id: 6,
-        name: 'Project 6',
-        description: 'Commercial campaign with professional styling and polished aesthetic.',
+        name: 'Wabi-Sabi',
         images: [
             'images/proyecto-6/01.png',
             'images/proyecto-6/02.png',
@@ -104,15 +99,12 @@ const projects = [
             'images/proyecto-6/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            model: 'Model Name'
+            photographer: 'Odeline @fotodeline'
         }
     },
     {
         id: 7,
-        name: 'Project 7',
-        description: 'Natural light photography series with authentic and relaxed poses.',
+        name: 'Tou com el ciment',
         images: [
             'images/proyecto-7/01.png',
             'images/proyecto-7/02.png',
@@ -121,15 +113,12 @@ const projects = [
             'images/proyecto-7/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            makeup: 'Artist Name',
-            model: 'Model Name'
+            photographer: 'Berta @berta.montblanch'
         }
     },
     {
         id: 8,
-        name: 'Project 8',
-        description: 'Fashion lookbook featuring seasonal collections and trend styling.',
+        name: 'Your Body, My Religion',
         images: [
             'images/proyecto-8/01.png',
             'images/proyecto-8/02.png',
@@ -138,81 +127,9 @@ const projects = [
             'images/proyecto-8/05.png'
         ],
         credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            creative_direction: 'Creative Director',
-            model: 'Model Name'
-        }
-    },
-    {
-        id: 9,
-        name: 'Project 9',
-        description: 'Conceptual editorial with artistic direction and experimental styling.',
-        images: [
-            'images/proyecto-9/01.png',
-            'images/proyecto-9/02.png',
-            'images/proyecto-9/03.png',
-            'images/proyecto-9/04.png',
-            'images/proyecto-9/05.png'
-        ],
-        credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            makeup: 'Artist Name',
-            creative_direction: 'Creative Director',
-            model: 'Model Name'
-        }
-    },
-    {
-        id: 10,
-        name: 'Project 10',
-        description: 'Beauty and portrait focused series with elegant minimalist backgrounds.',
-        images: [
-            'images/proyecto-10/01.png',
-            'images/proyecto-10/02.png',
-            'images/proyecto-10/03.png',
-            'images/proyecto-10/04.png',
-            'images/proyecto-10/05.png'
-        ],
-        credits: {
-            photographer: 'John Doe',
-            makeup: 'Artist Name',
-            hair: 'Hair Stylist Name',
-            model: 'Model Name'
-        }
-    },
-    {
-        id: 11,
-        name: 'Project 11',
-        description: 'Lifestyle photography series with natural settings and authentic moments.',
-        images: [
-            'images/proyecto-11/01.png',
-            'images/proyecto-11/02.png',
-            'images/proyecto-11/03.png',
-            'images/proyecto-11/04.png',
-            'images/proyecto-11/05.png'
-        ],
-        credits: {
-            photographer: 'John Doe',
-            stylist: 'Jane Smith',
-            model: 'Model Name'
-        }
-    },
-    {
-        id: 12,
-        name: 'Project 12',
-        description: 'Professional headshots and personal branding photography series.',
-        images: [
-            'images/proyecto-12/01.png',
-            'images/proyecto-12/02.png',
-            'images/proyecto-12/03.png',
-            'images/proyecto-12/04.png',
-            'images/proyecto-12/05.png'
-        ],
-        credits: {
-            photographer: 'John Doe',
-            makeup: 'Artist Name',
-            model: 'Model Name'
+            photographer: 'Paulo Herrera @pauloherrera.foto',
+            stylist: 'Elena Alvira @elenaaalvira; Natalia Arroyas @nataliaarroyas; Casilda Ortiz @cassortiz; Sarah Leiva @sarahleiva_',
+            designer_creative_direction: 'Alejandra Elizondo @aleelizondodiaz'
         }
     }
 ];
@@ -263,18 +180,17 @@ function renderPortfolio() {
         const portfolioItem = document.createElement('div');
         portfolioItem.className = 'portfolio-item';
         const coverImage = project.images[0];
-        
+
         portfolioItem.innerHTML = `
-            <img 
-                src="${coverImage}" 
-                alt="${project.name}" 
+            <img
+                src="${coverImage}"
+                alt="${project.name}"
                 class="portfolio-image"
                 loading="lazy"
             >
             <div class="portfolio-overlay">
                 <div class="portfolio-overlay-content">
                     <h3 class="portfolio-title">${project.name}</h3>
-                    <p class="portfolio-description">${project.description}</p>
                 </div>
             </div>
         `;
@@ -296,13 +212,13 @@ function renderPolaroids() {
     polaroids.forEach((imageUrl, index) => {
         const polaroidItem = document.createElement('div');
         polaroidItem.className = 'polaroid-item';
-        
+
         polaroidItem.innerHTML = `
             <div class="polaroid-frame">
                 <div class="polaroid-image-wrapper">
-                    <img 
-                        src="${imageUrl}" 
-                        alt="Polaroid ${index + 1}" 
+                    <img
+                        src="${imageUrl}"
+                        alt="Polaroid ${index + 1}"
                         class="polaroid-image"
                         loading="lazy"
                     >
@@ -326,6 +242,7 @@ function openProject(projectIndex) {
     currentProject = projectIndex;
     currentImageIndex = 0;
     isViewingPolaroid = false;
+    projectInfo.style.display = '';
     projectViewer.classList.add('active');
     updateProjectViewer();
     document.body.style.overflow = 'hidden';
@@ -351,22 +268,14 @@ function updateProjectViewer() {
 
     const project = projects[currentProject];
     const totalImages = project.images.length;
-    
-    // Update image
+
     projectImage.src = project.images[currentImageIndex];
     projectImage.alt = project.name;
-    
-    // Update info
     projectTitle.textContent = project.name;
-    projectDescription.textContent = project.description;
-    
-    // Update credits
+    projectDescription.textContent = '';
     updateCredits(project.credits);
-    
-    // Update counter
     projectCounter.textContent = `${currentImageIndex + 1} / ${totalImages}`;
-    
-    // Hide/show navigation buttons
+
     if (totalImages <= 1) {
         projectNavPrev.style.display = 'none';
         projectNavNext.style.display = 'none';
@@ -378,21 +287,15 @@ function updateProjectViewer() {
 
 function updatePolaroidViewer() {
     const totalPolaroids = polaroids.length;
-    
-    // Update image
+
     projectImage.src = polaroids[currentPolaroidIndex];
     projectImage.alt = `Polaroid ${currentPolaroidIndex + 1}`;
-    
-    // Update info - hide project-specific info for polaroids
     projectTitle.textContent = '';
     projectDescription.textContent = '';
     projectCredits.innerHTML = '';
     projectInfo.style.display = 'none';
-    
-    // Update counter
     projectCounter.textContent = `${currentPolaroidIndex + 1} / ${totalPolaroids}`;
-    
-    // Show navigation buttons
+
     if (totalPolaroids <= 1) {
         projectNavPrev.style.display = 'none';
         projectNavNext.style.display = 'none';
@@ -404,16 +307,17 @@ function updatePolaroidViewer() {
 
 function updateCredits(credits) {
     projectCredits.innerHTML = '';
-    
+
     const creditsOrder = [
         { key: 'photographer', label: 'Photography' },
+        { key: 'photography_post_production', label: 'Photography & Post-Production' },
         { key: 'stylist', label: 'Styling' },
         { key: 'makeup', label: 'Makeup' },
         { key: 'hair', label: 'Hair' },
         { key: 'creative_direction', label: 'Creative Direction' },
-        { key: 'model', label: 'Model' }
+        { key: 'designer_creative_direction', label: 'Designer & Creative Director' }
     ];
-    
+
     creditsOrder.forEach(({ key, label }) => {
         if (credits[key]) {
             const creditItem = document.createElement('p');
@@ -461,7 +365,6 @@ projectViewer.addEventListener('click', (e) => {
     }
 });
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (!projectViewer.classList.contains('active')) return;
 
@@ -476,7 +379,9 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Touch navigation for mobile
+/* ============================================
+   TOUCH NAVIGATION FOR MOBILE
+   ============================================ */
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -495,10 +400,8 @@ function handleSwipe() {
 
     if (Math.abs(diff) > swipeThreshold) {
         if (diff > 0) {
-            // Swiped left - next image
             nextProjectImage();
         } else {
-            // Swiped right - previous image
             prevProjectImage();
         }
     }
@@ -524,7 +427,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        
+
         if (target) {
             const offsetTop = target.offsetTop - 80;
             window.scrollTo({
@@ -580,7 +483,7 @@ function init() {
     renderPortfolio();
     renderPolaroids();
     updateNavbar();
-    
+
     setTimeout(() => {
         observePortfolioItems();
         observePolaroidItems();
