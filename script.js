@@ -126,12 +126,11 @@ const projects = [
 ];
 
 const polaroids = [
-    'images/polaroid-01.jpg',
-    'images/polaroid-02.jpg',
-    'images/polaroid-03.jpg',
-    'images/polaroid-04.jpg',
-    'images/polaroid-05.jpg',
-    'images/polaroid-06.jpg'
+    'public/polaroids/WhatsApp Image 2026-09-16 at 00.57.34.jpeg',
+    'public/polaroids/WhatsApp Image 2026-09-16 at 00.58.42.jpeg',
+    'public/polaroids/WhatsApp Image 2026-09-16 at 00.58.43.jpeg',
+    'public/polaroids/WhatsApp Image 2026-09-16 at 12.41.47.jpeg',
+    'public/polaroids/WhatsApp Image 2026-09-16 at 12.44.12.jpeg'
 ];
 
 const portfolioContainer = document.getElementById('portfolio-container');
