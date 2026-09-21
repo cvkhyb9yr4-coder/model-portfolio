@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a professional model. Editorial and fashion photography.">
-    <meta property="og:title" content="Model Portfolio">
-    <meta property="og:description" content="Professional model portfolio featuring editorial and fashion photography.">
+    <meta name="description" content="Portfolio of Jul Michèle Buch Vera — model, actress and creative based in Barcelona, Spain.">
+    <meta property="og:title" content="Jul Michèle Buch Vera — Portfolio">
+    <meta property="og:description" content="Model, actress and creative based in Barcelona, Spain.">
     <meta property="og:type" content="website">
-    
-    <title>Model Portfolio</title>
-    
+
+    <title>Jul Michèle Buch Vera — Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <div class="navbar-brand">
-                <a href="#home" class="brand-name">YOUR NAME</a>
+                <a href="#home" class="brand-name">JUL MICHÈLE BUCH VERA</a>
             </div>
             <ul class="navbar-menu">
                 <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
@@ -30,20 +29,19 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-image-container">
-            <img 
-                src="images/hero.jpg" 
-                alt="Portfolio hero image" 
+            <img
+                src="images/project1/005781-015-VK.JPG"
+                alt="Jul Michèle Buch Vera portfolio image"
                 class="hero-image"
                 fetchpriority="high"
             >
         </div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-name">YOUR NAME</h1>
-                <p class="hero-title">MODEL</p>
+                <h1 class="hero-name">JUL MICHÈLE BUCH VERA</h1>
+                <p class="hero-title">MODEL, ACTRESS, CREATIVE</p>
             </div>
             <div class="hero-scroll">
                 <span class="scroll-indicator">SCROLL TO EXPLORE</span>
@@ -54,93 +52,56 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <div id="portfolio-container" class="portfolio-container">
-            <!-- Projects will be generated here by JavaScript -->
-        </div>
+        <div id="portfolio-container" class="portfolio-container"></div>
     </section>
 
-    <!-- Polaroids Section -->
     <section id="polaroids" class="polaroids">
-        <div id="polaroids-container" class="polaroids-container">
-            <!-- Polaroids will be generated here by JavaScript -->
-        </div>
+        <div id="polaroids-container" class="polaroids-container"></div>
     </section>
 
-    <!-- Project Viewer Modal -->
     <div id="project-viewer" class="project-viewer">
         <div class="project-viewer-content" id="project-viewer-content">
-            <!-- Main Image Container -->
             <div class="project-image-container" id="project-image-container">
                 <img id="project-image" src="" alt="" class="project-image">
             </div>
 
-            <!-- Navigation Buttons -->
             <button class="project-nav-button project-nav-prev" id="project-nav-prev" aria-label="Previous image">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M15 19l-7-7 7-7"></path>
-                </svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 19l-7-7 7-7"></path></svg>
             </button>
             <button class="project-nav-button project-nav-next" id="project-nav-next" aria-label="Next image">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M9 5l7 7-7 7"></path>
-                </svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"></path></svg>
             </button>
-
-            <!-- Close Button -->
             <button class="project-viewer-close" id="project-viewer-close" aria-label="Close project">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M18 6L6 18M6 6l12 12"></path>
-                </svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"></path></svg>
             </button>
 
-            <!-- Project Info Sidebar -->
             <div class="project-info" id="project-info">
                 <div class="project-info-scroll">
                     <h2 class="project-info-title" id="project-title"></h2>
                     <p class="project-info-description" id="project-description"></p>
-                    
-                    <div class="project-credits" id="project-credits">
-                        <!-- Credits will be inserted here -->
-                    </div>
+                    <div class="project-credits" id="project-credits"></div>
                 </div>
             </div>
-
-            <!-- Image Counter -->
             <div class="project-counter" id="project-counter">1 / 1</div>
         </div>
     </div>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contact-container">
             <div class="contact-header">
                 <h2 class="contact-name">Jul Michèle Buch Vera</h2>
                 <p class="contact-title">Model, Actress, Creative</p>
             </div>
-            
-            <div class="contact-location">
-                <p>Based in <span id="contact-city">Barcelona, Spain</span></p>
-            </div>
-
+            <div class="contact-location"><p>Based in <span id="contact-city">Barcelona, Spain</span></p></div>
             <div class="contact-info">
-                <div class="contact-item">
-                    <label>EMAIL</label>
-                    <a href="mailto:juliabuchvera@gmial.com" class="contact-link">juliabuchvera@gmial.com</a>
-                </div>
-                <div class="contact-item">
-                    <label>INSTAGRAM</label>
-                    <a href="https://instagram.com/jijijii.png" target="_blank" class="contact-link">@jijijii.png</a>
-                </div>
+                <div class="contact-item"><label>EMAIL</label><a href="mailto:juliabuchvera@gmial.com" class="contact-link">juliabuchvera@gmial.com</a></div>
+                <div class="contact-item"><label>INSTAGRAM</label><a href="https://instagram.com/jijijii.png" target="_blank" rel="noopener noreferrer" class="contact-link">@jijijii.png</a></div>
             </div>
-
-            <div class="contact-cta">
-                <a href="mailto:juliabuchvera@gmial.com" class="cta-button">CONTACT ME</a>
-            </div>
+            <div class="contact-cta"><a href="mailto:juliabuchvera@gmial.com" class="cta-button">CONTACT ME</a></div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260921"></script>
 </body>
 </html>
