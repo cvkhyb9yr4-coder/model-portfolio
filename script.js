@@ -6,11 +6,11 @@ const projects = [
         id: 1,
         name: "Rocio Meyer's Personal Project",
         images: [
-            'images/proyecto-1/01.png',
-            'images/proyecto-1/02.png',
-            'images/proyecto-1/03.png',
-            'images/proyecto-1/04.png',
-            'images/proyecto-1/05.png'
+            'images/project1/01.png',
+            'images/project1/02.png',
+            'images/project1/03.png',
+            'images/project1/04.png',
+            'images/project1/05.png'
         ],
         credits: {
             photographer: 'Rocio Meyer',
@@ -22,11 +22,11 @@ const projects = [
         id: 2,
         name: 'Final Design Project',
         images: [
-            'images/proyecto-2/01.png',
-            'images/proyecto-2/02.png',
-            'images/proyecto-2/03.png',
-            'images/proyecto-2/04.png',
-            'images/proyecto-2/05.png'
+            'images/project2/01.png',
+            'images/project2/02.png',
+            'images/project2/03.png',
+            'images/project2/04.png',
+            'images/project2/05.png'
         ],
         credits: {
             photographer: 'Martina Moreno @martinamorenoooo',
@@ -39,11 +39,11 @@ const projects = [
         id: 3,
         name: 'Personal Project',
         images: [
-            'images/proyecto-3/01.png',
-            'images/proyecto-3/02.png',
-            'images/proyecto-3/03.png',
-            'images/proyecto-3/04.png',
-            'images/proyecto-3/05.png'
+            'images/project3/01.png',
+            'images/project3/02.png',
+            'images/project3/03.png',
+            'images/project3/04.png',
+            'images/project3/05.png'
         ],
         credits: {
             photographer: 'Jack @jacky_varlet',
@@ -57,11 +57,11 @@ const projects = [
         id: 4,
         name: 'Personal Project',
         images: [
-            'images/proyecto-4/01.png',
-            'images/proyecto-4/02.png',
-            'images/proyecto-4/03.png',
-            'images/proyecto-4/04.png',
-            'images/proyecto-4/05.png'
+            'images/project4/01.png',
+            'images/project4/02.png',
+            'images/project4/03.png',
+            'images/project4/04.png',
+            'images/project4/05.png'
         ],
         credits: {
             photographer: 'Jack @jacky_varlet',
@@ -75,11 +75,11 @@ const projects = [
         id: 5,
         name: 'Lost in Limbo',
         images: [
-            'images/proyecto-5/01.png',
-            'images/proyecto-5/02.png',
-            'images/proyecto-5/03.png',
-            'images/proyecto-5/04.png',
-            'images/proyecto-5/05.png'
+            'images/project5/01.png',
+            'images/project5/02.png',
+            'images/project5/03.png',
+            'images/project5/04.png',
+            'images/project5/05.png'
         ],
         credits: {
             photography_post_production: 'Carla @klar_kei',
@@ -92,11 +92,11 @@ const projects = [
         id: 6,
         name: 'Wabi-Sabi',
         images: [
-            'images/proyecto-6/01.png',
-            'images/proyecto-6/02.png',
-            'images/proyecto-6/03.png',
-            'images/proyecto-6/04.png',
-            'images/proyecto-6/05.png'
+            'images/project6/01.png',
+            'images/project6/02.png',
+            'images/project6/03.png',
+            'images/project6/04.png',
+            'images/project6/05.png'
         ],
         credits: {
             photographer: 'Odeline @fotodeline'
@@ -106,11 +106,11 @@ const projects = [
         id: 7,
         name: 'Tou com el ciment',
         images: [
-            'images/proyecto-7/01.png',
-            'images/proyecto-7/02.png',
-            'images/proyecto-7/03.png',
-            'images/proyecto-7/04.png',
-            'images/proyecto-7/05.png'
+            'images/project7/01.png',
+            'images/project7/02.png',
+            'images/project7/03.png',
+            'images/project7/04.png',
+            'images/project7/05.png'
         ],
         credits: {
             photographer: 'Berta @berta.montblanch'
@@ -120,11 +120,11 @@ const projects = [
         id: 8,
         name: 'Your Body, My Religion',
         images: [
-            'images/proyecto-8/01.png',
-            'images/proyecto-8/02.png',
-            'images/proyecto-8/03.png',
-            'images/proyecto-8/04.png',
-            'images/proyecto-8/05.png'
+            'images/project8/01.png',
+            'images/project8/02.png',
+            'images/project8/03.png',
+            'images/project8/04.png',
+            'images/project8/05.png'
         ],
         credits: {
             photographer: 'Paulo Herrera @pauloherrera.foto',
