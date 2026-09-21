@@ -31,11 +31,18 @@ jobs:
       - name: Prepare site artifact
         run: |
           mkdir -p _site
-          rsync -av --delete \
-            --exclude '.git/' \
-            --exclude '.github/' \
-            --exclude '_site/' \
-            ./ _site/
+          shopt -s nullglob
+          cp *.html *.css *.js _site/
+          for file in CNAME robots.txt sitemap.xml favicon.ico favicon.png favicon.svg manifest.webmanifest; do
+            if [ -e "$file" ]; then
+              cp "$file" _site/
+            fi
+          done
+          for dir in images public; do
+            if [ -d "$dir" ]; then
+              cp -R "$dir" _site/
+            fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
