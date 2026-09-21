@@ -29,6 +29,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Prepare site artifact
+        shell: bash
         run: |
           mkdir -p _site
           shopt -s nullglob
